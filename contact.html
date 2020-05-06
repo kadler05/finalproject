@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<header>
+    <ul>
+        <li>
+            <h1>
+            <a href="index.html">INF250 News</a></li>
+        </h1>   
+        </ul> 
+    <ul>
+        <li><a href="news.html">News</a></li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><a href="weather.html">Weather</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</header>
+<div class="contact-us" ><h2>Contact Us</h2></div>
+    <body>
+        <form class="grid-container" action="https://rest-api-ex.herokuapp.com/all" method="post">
+         
+            <div class="grid-item left-column">
+            <label for="name">Name:</label> 
+            </div>
+            <div class="grid-item">
+            <input type="text" name="name" id="name" required>
+            <div class="grid-item left-column">
+            <label for="email">E-mail:</label> 
+            </div>
+            <div class="grid-item">
+            <input type="email" name="email" id="email" autofocus required>
+            </div>
+            <div class="grid-item left-column">
+            <label for="message">Message:</label> 
+            </div>
+            <div class="grid-item">
+            <textarea id="message" type="message" name="message" rows="10" cols="110" required></textarea>
+            </div>
+            <div class="grid-item left-column left-button">
+            <button class="submit" type="submit" value="Submit">Submit</button>
+            <button class="reset" type="reset" value="Reset">Reset</button>
+
+            </div>
+        </form> 
+    <footer>
+        <p>Katie Adler &copy; <script>document.write( new Date().getUTCFullYear() );</script></p>
+    </footer>    
+    </body>
+</html>
